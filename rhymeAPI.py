@@ -1,7 +1,16 @@
 from fastapi import FastAPI	
 import rhymedb as rdb
 
-app = FastAPI()
+app = FastAPI(
+	title="🚀 Rhymes-API ",
+	description="`API to GET English Rhymes for a specific word.` ",
+	version="0.0.1",
+	license_info={
+		'name':'MIT LICENSE',
+		"url":'https://github.com/redtrib3/rhymes-API/blob/main/LICENSE'
+		}
+	)
+
 
 
 @app.get('/')
