@@ -1,2 +1,4 @@
-# rhyme-API
-API to GET rhymes for a specific word
+# Rhymes API
+API to GET rhymes for a specific word.
+
+
