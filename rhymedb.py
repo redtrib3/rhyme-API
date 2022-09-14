@@ -1,12 +1,12 @@
 import sqlite3 as sql
 import sys, os, os.path
 
-_rhymedb_path = os.path.join(sys.prefix, 'rhymes_data/rhyme.db')
+_rhymedb_path = os.path.join(sys.prefix, 'data/rhyme.db')
 
 try:
     _conn = sql.connect(_rhymedb_path,check_same_thread=False) # added 2 parameter to avoid threads programmingError
 except sql.OperationalError:
-    _rhymedb_path = os.path.join(os.path.dirname(sys.argv[0]), 'rhymes_data/rhyme.db')
+    _rhymedb_path = os.path.join(os.path.dirname(sys.argv[0]), 'data/rhyme.db')
     _conn = sql.connect(_rhymedb_path) # if it fails again, let it crash
 
 def rhymes_with(word):
