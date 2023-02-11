@@ -1,3 +1,5 @@
+[![Deploy](https://button.deta.dev/1/svg)](https://deta.sh/)
+
 # Rhymes API
 API to GET rhymes for a specific word.
 
